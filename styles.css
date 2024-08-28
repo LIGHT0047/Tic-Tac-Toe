@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #92cbdf;
+    text-align: center; 
+    font-family: Georgia, serif;
+}
+ h1 {
+    margin:20px;
+}
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+}
+.boxs {
+    background-color: #0f3c4c;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
+    font-size: 8vmin;
+    color: #e9f5f9;
+    border: 1vmin solid #e9f5f9;
+}
+#reset {
+    margin-top: 30px;
+}
+.reset_btn {
+    padding: 15px 40px;
+    background-color: #0f3c4c;
+    color: #d3eaf2;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.25rem;
+}
+.msgcontainer{
+    margin-bottom: 30px;
+}
+.hide {
+    display: none;
+}
+/* Blink animation define karne ke liye keyframes */
+@keyframes blink {
+    100% {
+      color: #e81a0f;
+    }
+    50% {
+      color: #1E90FF; /
+    }
+  }
+  
+  #msg {
+    animation: blink 1s  step-start infinite;
+  }
+  
+#msg {
+    font-size: 4vmin;
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+    animation-duration: 1s;
+    color: #e81a0f;
+}
+.new_btn {
+    padding: 15px 40px;
+    background-color: #0f3c4c;
+    color: #d3eaf2;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.25rem;
+} 
